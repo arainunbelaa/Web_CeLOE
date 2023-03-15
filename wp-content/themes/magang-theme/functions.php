@@ -22,12 +22,13 @@ function add_script()
    wp_enqueue_script('easing-min-js', get_template_directory_uri() . '/assets/lib/easing/easing.min.js');
    wp_enqueue_script('waypoints-min-js', get_template_directory_uri() . '/assets/lib/waypoints/waypoints.min.js');
    wp_enqueue_script('owl-carousel-js', get_template_directory_uri() . '/assets/lib/owlcarousel/owl.carousel.min.js');
-   wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js'); 
+   wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js');
 }
 add_action('wp_enqueue_scripts', 'add_script');
 
 // Google Font
-function add_google_fonts(){
+function add_google_fonts()
+{
    wp_enqueue_style('font-google', 'https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap');
 }
 add_action('wp_enqueue_scripts', 'add_google_fonts');

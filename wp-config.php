@@ -83,7 +83,15 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-
+// SMTP email settings
+define( 'SMTP_USER', 'idris3097@gmail.com' );
+define( 'SMTP_PASS', 'Idris2002.' );
+define( 'SMTP_HOST', 'smtp.gmail.com' );
+define( 'SMTP_FROM', 'idris3097@gmail.com' );
+define( 'SMTP_NAME', 'Tony Florida' );
+define( 'SMTP_PORT', '587' );
+define( 'SMTP_SECURE', 'tls' );
+define( 'SMTP_AUTH', true );
 
 /* That's all, stop editing! Happy publishing. */
 
