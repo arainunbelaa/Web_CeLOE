@@ -26,6 +26,48 @@ function callbackCategories()
     include TEMP_PATH . "categories/show_categories.php";
 }
 
+add_action('wp_ajax_kategori_insert', 'ajax_kategori_insert');
+function ajax_kategori_insert()
+{
+    $arr = [];
+    wp_parse_str($_POST['kategori_insert'], $arr);
+    $current_datetime = current_datetime()->format('Y-m-d H:i:s');
+
+    if (!empty($_POST)) {
+        $data = array(
+            'nama_kategori' => $arr['kategori'],
+            'date_added' => $current_datetime,
+            'date_modified' => $current_datetime,
+        );
+
+        $insert = addCategories('kategori', $data);
+    }
+}
+
+add_action('wp_ajax_kategori_edit', 'ajax_kategori_edit');
+function ajax_kategori_edit()
+{
+    $arr = [];
+    wp_parse_str($_POST['kategori_edit'], $arr);
+    $current_datetime = current_datetime()->format('Y-m-d H:i:s');
+
+    if (!empty($_POST)) {
+        $data = array(
+            'nama_kategori' => $arr['kategoriNama'],
+            'date_modified' => $current_datetime,
+        );
+
+        $where = array('id' => $arr['catId']);
+        $update = updateKategori('kategori', $data, $where);
+    }
+}
+
+add_action('wp_ajax_delete_kategori', 'ajax_kategori_delete');
+function ajax_kategori_delete()
+{
+    $where = array('id' => $_POST['dataId']);
+    $delete = deleteKategori('kategori', $where);
+}
 
 // Menu News
 function menuNews()
@@ -75,7 +117,6 @@ function callbackAddNews()
 {
     if (isset($_POST['submit'])) {
         $image_file = $_FILES["photos"];
-
         if (!isset($image_file)) {
             die('No file uploaded.');
         }
@@ -92,7 +133,7 @@ function callbackAddNews()
         $data = array(
             'gambar' => $newfilename,
             'judul' => isset($_POST['judul']) ? $_POST['judul'] : '',
-            'deskripsi' => isset($news_description) ? $news_description : '',
+            'deskripsi' => isset($_POST["deskripsi"]) ? $_POST["deskripsi"] : '',
             'kategori' => $_POST['kategoriValue'],
             'date_added' => $current_datetime,
             'date_modified' => $current_datetime,
@@ -108,7 +149,7 @@ function callbackAddNews()
             move_uploaded_file(
                 $image_file["tmp_name"],
 
-                $filePath .  "/images/news/" . $newfilename
+                $filePath . "/images/news/" . $newfilename
             );
 
             echo "<script>location.replace('admin.php?page=menu_news');</script>";
@@ -130,7 +171,7 @@ function callbackUpdateNews()
         $news_description = nl2br($_POST["deskripsi"]);
         $news_description = trim($news_description);
 
-        if ($_FILES['photos']['error'] == 4 || ($_FILES['photos']['size'] == 0 && $_FILES['photos']['error'] == 0)) {
+        if (!isset($_FILES['photos']) || $_FILES['photos']['error'] == 4 || ($_FILES['photos']['size'] == 0 && $_FILES['photos']['error'] == 0)) {
             $data = array(
                 'judul' => isset($_POST['judul']) ? $_POST['judul'] : '',
                 'deskripsi' => isset($news_description) ? $news_description : '',

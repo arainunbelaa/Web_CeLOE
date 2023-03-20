@@ -1,7 +1,10 @@
-<?php 
+<?php
+
 /**
  *  Template Name: Page Home 
- */ 
+ */
+
+$tampil_data = recentNewsIndex('news');
 ?>
 
 <?php get_header(); ?>
@@ -11,38 +14,32 @@
     <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="<?php echo get_template_directory_uri().'/assets/img/carousel-1.jpg'; ?>" alt="Image"
-                    class="w-100" />
+                <img src="<?php echo get_template_directory_uri() . '/assets/img/carousel-1.jpg'; ?>" alt="Image" class="w-100" />
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
                         <h5 class="text-white text-uppercase">CELOE CODE</h5>
                         <h1 class="display-1 text-white mb-md-4">Bagian Pengembangan Konten CELOE</h1>
-                        <a href="https://wa.me/6281299923563"
-                            class="btn btn-secondary py-md-3 px-md-5 rounded-pill">Contact Us</a>
+                        <a href="https://wa.me/6281299923563" class="btn btn-secondary py-md-3 px-md-5 rounded-pill">Contact Us</a>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="<?php echo get_template_directory_uri().'/assets/img/carousel-2.jpg'; ?>" alt="Image"
-                    class="w-100" />
+                <img src="<?php echo get_template_directory_uri() . '/assets/img/carousel-2.jpg'; ?>" alt="Image" class="w-100" />
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
                         <h5 class="text-white text-uppercase">CELOE CODE</h5>
                         <h1 class="display-1 text-white mb-md-4">Harmony, Excellence, Integrity</h1>
-                        <a href="https://wa.me/6281299923563"
-                            class="btn btn-secondary py-md-3 px-md-5 rounded-pill">Contact Us</a>
+                        <a href="https://wa.me/6281299923563" class="btn btn-secondary py-md-3 px-md-5 rounded-pill">Contact Us</a>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="<?php echo get_template_directory_uri().'/assets/img/carousel-3.jpg'; ?>" alt="Image"
-                    class="w-100" />
+                <img src="<?php echo get_template_directory_uri() . '/assets/img/carousel-3.jpg'; ?>" alt="Image" class="w-100" />
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
                         <h5 class="text-white text-uppercase">CELOE CODE</h5>
                         <h1 class="display-1 text-white mb-md-4">Manajemen Mata kuliah & Pembelajaran</h1>
-                        <a href="https://wa.me/6281299923563"
-                            class="btn btn-secondary py-md-3 px-md-5 rounded-pill">Contact Us</a>
+                        <a href="https://wa.me/6281299923563" class="btn btn-secondary py-md-3 px-md-5 rounded-pill">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -72,8 +69,7 @@
             <div class="col-lg-6">
                 <div class="h-100 d-flex flex-column justify-content-center bg-primary p-5">
                     <div class="d-flex text-white mb-5">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4"
-                            style="width: 60px; height: 60px;">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
                             <i class="fa fa-users fs-4"></i>
                         </div>
                         <div class="ps-4">
@@ -84,8 +80,7 @@
                         </div>
                     </div>
                     <div class="d-flex text-white mb-5">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4"
-                            style="width: 60px; height: 60px;">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
                             <i class="fa fa-cogs fs-4"></i>
                         </div>
                         <div class="ps-4">
@@ -96,8 +91,7 @@
                         </div>
                     </div>
                     <div class="d-flex text-white">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4"
-                            style="width: 60px; height: 60px;">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
                             <i class="fa fa-rocket fs-4"></i>
                         </div>
                         <div class="ps-4">
@@ -114,50 +108,81 @@
     <!-- About End -->
 
     <!-- Blog Start -->
-    <div class="container-fluid py-0 px-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px; margin-top: 10px;">
-            <h1 class="display-5 mb-0">Berita Terbaru</h1>
-            <hr class="w-25 mx-auto bg-primary">
-        </div>
-        <div class="row g-5">
+    <?php if (!empty($tampil_data)) : ?>
+        <div class="container-fluid py-6 px-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                <h1 class="display-5 mb-0">Berita Terbaru</h1>
+                <hr class="w-25 mx-auto bg-primary">
+            </div>
+            <!-- <div class="row g-5">
             <?php
-            $tampil_data = recentNewsIndex('news');
-            foreach($tampil_data as $data) :
+            foreach ($tampil_data as $data) :
             ?>
             <div class="col-lg-4">
                 <div class="blog-item">
                     <div class="position-relative overflow-hidden"></div>
-                        <img src="<?= content_url() . '/uploads/images/news/' . $data->gambar; ?>"
-                            alt="" class="img-fluid" />
+                    <img src="<?= content_url() . '/uploads/images/news/' . $data->gambar; ?>" alt="Image" height="200"
+                        width="100%" style="object-fit: cover;" />
+                </div>
+                <div class="bg-secondary d-flex">
+                    <div
+                        class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary text-white px-4">
+                        <?php
+                        $tanggal = date('d', strtotime($data->date_added));
+                        $bulan = date('M', strtotime($data->date_added));
+                        $tahun = date('Y', strtotime($data->date_added));
+                        ?>
+                        <span><?php echo $tanggal; ?></span>
+                        <h5 class="text-uppercase m-0"><?php echo $bulan; ?></h5>
+                        <span><?php echo $tahun; ?></span>
                     </div>
-                    <div class="bg-secondary d-flex">
-                        <div
-                            class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary text-white px-4">
-                            <?php 
-                                $tanggal = date('d',strtotime($data->date_added)); 
-                                $bulan = date('M',strtotime($data->date_added));
-                                $tahun = date('Y',strtotime($data->date_added));
-                                ?>
-                            <span><?php echo $tanggal; ?></span>
-                            <h5 class="text-uppercase m-0"><?php echo $bulan; ?></h5>
-                            <span><?php echo $tahun; ?></span>
+                    <div class="d-flex flex-column justify-content-center py-3 px-4">
+                        <div class="d-flex mb-2">
+                            <small class="text-uppercase me-3"><i class="bi bi-person me-2"></i>CeLOE</small>
+                            <small class="text-uppercase me-3"><i
+                                    class="bi bi-bookmarks me-2"></i><?php echo $data->kategori; ?></small>
                         </div>
-                        <div class="d-flex flex-column justify-content-center py-3 px-4">
-                            <div class="d-flex mb-2">
-                                <small class="text-uppercase me-3"><i class="bi bi-person me-2"></i>CeLOE</small>
-                                <small class="text-uppercase me-3"><i
-                                        class="bi bi-bookmarks me-2"></i><?php echo $data->kategori; ?></small>
-                            </div>
-                            <a class="h4"
-                                href="<?= get_home_url() . '/detail/?news='. $data->id; ?>"><?php echo $data->judul; ?></a>
-                        </div>
+                        <a class="h4 news-title"
+                            href="<?= get_home_url() . '/detail/?news=' . $data->id; ?>"><?php echo $data->judul; ?></a>
                     </div>
                 </div>
             </div>
             <?php endforeach; ?>
+        </div> -->
+            <div class="row g-5">
+                <?php
+                foreach ($tampil_data as $data) :
+                ?>
+                    <div class="col-lg-4">
+                        <div class="blog-item">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid" src="<?= content_url() . '/uploads/images/news/' . $data->gambar; ?>" alt="Image" style="object-fit: cover; height: 40vh; width: 100%;">
+                            </div>
+                            <div class="bg-secondary d-flex">
+                                <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary text-white px-4">
+                                    <?php
+                                    $tanggal = date('d', strtotime($data->date_added));
+                                    $bulan = date('M', strtotime($data->date_added));
+                                    $tahun = date('Y', strtotime($data->date_added));
+                                    ?>
+                                    <span><?= $tanggal; ?></span>
+                                    <h5 class="text-uppercase m-0"><?= $bulan; ?></h5>
+                                    <span><?= $tahun; ?></span>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center py-3 px-4" style="height: 20vh;">
+                                    <div class="d-flex mb-2">
+                                        <small class="text-uppercase me-3"><i class="bi bi-person me-2"></i>CeLOE</small>
+                                        <small class="text-uppercase me-3"><i class="bi bi-bookmarks me-2"></i><?= $data->kategori; ?></small>
+                                    </div>
+                                    <a class="h4 news-title" href="<?= get_home_url() . '/detail/?news=' . $data->id; ?>"><?= $data->judul; ?></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
         </div>
-    </div>
-
+    <?php endif; ?>
     <!-- Blog End -->
 
     <!-- Services Start -->
@@ -169,41 +194,34 @@
         <div class="row g-5">
             <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
                         <i class="fa fa-newspaper fa-2x"></i>
                     </div>
                     <h3 class="mb-3">Event</h3>
-                    <p class="mb-0">kegiatan yang diadakan oleh bang CeLoe yang berupa sebuah seminar, di waktu - waktu
-                        tertentu.</p>
+                    <p class="mb-0">kegiatan yang diadakan oleh bang CeLoe yang berupa sebuah seminar, di waktu - waktu tertentu.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
                         <i class="fa fa-folder fa-2x"></i>
                     </div>
                     <h3 class="mb-3">Administrative</h3>
-                    <p class="mb-0">ketatausahaan memerlukan sebuah perencanaan yang baik dan matang, dimana setiap
-                        melakukan kegiatan organisasi.</p>
+                    <p class="mb-0">ketatausahaan memerlukan sebuah perencanaan yang baik dan matang, dimana setiap melakukan kegiatan organisasi.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
                         <i class="fa fa-camera fa-2x"></i>
                     </div>
                     <h3 class="mb-3">Videography</h3>
-                    <p class="mb-0"> Merekam kejadian bentuk video, mendalam mengenai teknik pengambilan gambar, hingga
-                        proses editing.</p>
+                    <p class="mb-0"> Merekam kejadian bentuk video, mendalam mengenai teknik pengambilan gambar, hingga proses editing.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
                         <i class="fa fa-book fa-2x"></i>
                     </div>
                     <h3 class="mb-3">Documentation</h3>
@@ -212,8 +230,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
                         <i class="fa fa-laptop fa-2x"></i>
                     </div>
                     <h3 class="mb-3">Content Video</h3>
@@ -222,8 +239,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
                         <i class="fa fa-map fa-2x"></i>
                     </div>
                     <h3 class="mb-3">Renewal</h3>
@@ -245,8 +261,7 @@
             <div class="col-lg-4">
                 <div class="row g-5">
                     <div class="col-12">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
-                            style="width: 60px; height: 60px;">
+                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                             <i class="fa fa-bullhorn fs-4 text-white"></i>
                         </div>
                         <h3>Workshop</h3>
@@ -254,8 +269,7 @@
                             membagikan pengalaman.</p>
                     </div>
                     <div class="col-12">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
-                            style="width: 60px; height: 60px;">
+                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                             <i class="fa fa-bullseye fs-4 text-white"></i>
                         </div>
                         <h3>Pelatihan</h3>
@@ -263,8 +277,7 @@
                             skill peserta.</p>
                     </div>
                     <div class="col-12">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
-                            style="width: 60px; height: 60px;">
+                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                             <i class="fa fa-award fs-4 text-white"></i>
                         </div>
                         <h3>Sertifikat</h3>
@@ -275,23 +288,20 @@
             </div>
             <div class="col-lg-4">
                 <div class="d-block bg-primary h-100 text-center">
-                    <img src="<?php echo get_template_directory_uri().'/assets/img/feature.png'; ?>" alt="img"
-                        class="img-fluid" />
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/feature.png'; ?>" alt="img" class="img-fluid" />
                     <div class="p-4">
                         <p class="text-white mb-4">CeLoe merupakan lembaga pengembangan konten yang bertujuan untuk
                             memfasilitasi mahasiswa dalam kegiatan daring. Untuk melihat kegiatan workshop yang
                             dilakukan CeLoe kalian bisa melihatnya disini, anda juga bisa mendaftarkan diri anda sebagai
                             peserta dari kegiatan CeLoe.</p>
-                        <a href="<?php echo get_home_url() . '/news/'; ?>"
-                            class="btn btn-light py-md-3 px-md-5 rounded-pill mb-2">Lihat</a>
+                        <a href="<?php echo get_home_url() . '/news/'; ?>" class="btn btn-light py-md-3 px-md-5 rounded-pill mb-2">Lihat</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="row g-5">
                     <div class="col-12">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
-                            style="width: 60px; height: 60px;">
+                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                             <i class="fa fa-id-badge fs-4 text-white"></i>
                         </div>
                         <h3>Internship</h3>
@@ -299,8 +309,7 @@
                             mencoba pengalaman magang di CeLoe </p>
                     </div>
                     <div class="col-12">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
-                            style="width: 60px; height: 60px;">
+                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                             <i class="fa fa-headset fs-4 text-white"></i>
                         </div>
                         <h3>Video Editor Management</h3>
@@ -308,8 +317,7 @@
                             pembelajaran</p>
                     </div>
                     <div class="col-12">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
-                            style="width: 60px; height: 60px;">
+                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                             <i class="fa fa-history fs-4 text-white"></i>
                         </div>
                         <h3>Dokumentasi</h3>
@@ -361,9 +369,7 @@
             </div>
             <div class="col-lg-6" style="min-height: 400px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100"
-                        src="<?php echo get_template_directory_uri().'/assets/img/quote.jpg'; ?>" alt=""
-                        class="img-fluid radius-image" style="object-fit: cover;" />
+                    <img class="position-absolute w-100 h-100" src="<?php echo get_template_directory_uri() . '/assets/img/quote.jpg'; ?>" alt="" class="img-fluid radius-image" style="object-fit: cover;" />
                 </div>
             </div>
         </div>
@@ -375,20 +381,16 @@
         <div class="row g-0">
             <div class="col-lg-6" style="min-height: 500px;">
                 <div class="position-relative h-100">
-                    <img src="<?php echo get_template_directory_uri().'/assets/img/testimonial.jpg'; ?>" alt=""
-                        tyle="object-fit: cover;" class="position-absolute w-100 h-100" />
+                    <img class="position-absolute w-100 h-100" src="<?= get_template_directory_uri() . '/assets/img/testimonial.jpg'; ?>" style="object-fit: cover;">
                 </div>
             </div>
             <div class="col-lg-6 py-6 px-5">
                 <h1 class="display-5 mb-4">What Our Staff say!!!</h1>
                 <div class="owl-carousel testimonial-carousel">
                     <div class="testimonial-item">
-                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Dolores sed duo
-                            clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna
-                            ut et, nonumy et labore et tempor diam tempor erat dolor rebum sit ipsum.</p>
+                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat dolor rebum sit ipsum.</p>
                         <div class="d-flex align-items-center">
-                            <img src="<?php echo get_template_directory_uri().'/assets/img/testimonial-1.jpg'; ?>"
-                                alt="" class="img-fluid radius-image" />
+                            <img class="img-fluid rounded-circle" src="<?= get_template_directory_uri() . '/assets/img/testimonial-1.jpg'; ?>" alt="">
                             <div class="ps-4">
                                 <h3>Fegi Syawaldi</h3>
                                 <span class="text-uppercase">Staff</span>
@@ -396,12 +398,9 @@
                         </div>
                     </div>
                     <div class="testimonial-item">
-                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Dolores sed duo
-                            clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna
-                            ut et, nonumy et labore et tempor diam tempor erat dolor rebum sit ipsum.</p>
+                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat dolor rebum sit ipsum.</p>
                         <div class="d-flex align-items-center">
-                            <img src="<?php echo get_template_directory_uri().'/assets/img/testimonial-2.jpg'; ?>"
-                                alt="" class="img-fluid rounded-circle" />
+                            <img class="img-fluid rounded-circle" src="<?= get_template_directory_uri() . '/assets/img/testimonial-2.jpg'; ?>" alt="">
                             <div class="ps-4">
                                 <h3>Annisa Gustien</h3>
                                 <span class="text-uppercase">Head</span>
@@ -409,12 +408,9 @@
                         </div>
                     </div>
                     <div class="testimonial-item">
-                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Dolores sed duo
-                            clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna
-                            ut et, nonumy et labore et tempor diam tempor erat dolor rebum sit ipsum.</p>
+                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat dolor rebum sit ipsum.</p>
                         <div class="d-flex align-items-center">
-                            <img src="<?php echo get_template_directory_uri().'/assets/img/testimonial-3.jpg'; ?>"
-                                alt="" class="img-fluid rounded-circle" />
+                            <img class="img-fluid rounded-circle" src="<?= get_template_directory_uri() . '/assets/img/testimonial-3.jpg'; ?>" alt="">
                             <div class="ps-4">
                                 <h3>Arini Rohmawati</h3>
                                 <span class="text-uppercase">Staff</span>
@@ -422,13 +418,9 @@
                         </div>
                     </div>
                     <div class="testimonial-item">
-                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Dolores sed duo
-                            clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna
-                            ut et, nonumy et labore et tempor diam tempor erat dolor rebum sit ipsum.</p>
+                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat dolor rebum sit ipsum.</p>
                         <div class="d-flex align-items-center">
-                            <img src="<?php echo get_template_directory_uri().'/assets/img/testimonial-4.jpg'; ?>"
-                                alt="" class="img-fluid rounded-circle" />
-
+                            <img class="img-fluid rounded-circle" src="img/testimonial-4.jpg" alt="">
                             <div class="ps-4">
                                 <h3>Mhd Yudha Pratama</h3>
                                 <span class="text-uppercase">Staff</span>
@@ -442,19 +434,19 @@
     <!-- Testimonial End -->
 
     <script>
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        items: 1,
-        dots: false,
-        loop: true,
-        nav: true,
-        navText: [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
-        ],
-    });
+        // Testimonials carousel
+        $(".testimonial-carousel").owlCarousel({
+            autoplay: true,
+            smartSpeed: 1000,
+            items: 1,
+            dots: false,
+            loop: true,
+            nav: true,
+            navText: [
+                '<i class="bi bi-arrow-left"></i>',
+                '<i class="bi bi-arrow-right"></i>'
+            ],
+        });
     </script>
 
     <?php get_footer(); ?>
