@@ -45,6 +45,7 @@ function create_custom_table()
         "CREATE TABLE " . $table_name_komen . " (
             id int(10) NOT NULL AUTO_INCREMENT,
             news_id varchar(255) NOT NULL,
+            parent_komen_id int NOT NULL,
             nama varchar(255) NOT NULL,
             komen_body text NOT NULL,
             date_added timestamp,

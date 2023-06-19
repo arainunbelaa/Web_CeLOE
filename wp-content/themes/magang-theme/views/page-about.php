@@ -7,47 +7,38 @@
 <?php get_header(); ?>
 
 <!-- About Start -->
-<div class="container-fluid bg-secondary p-0">
-    <div class="row g-0">
-        <div class="col-lg-6 py-6 px-5">
-            <h1 class="display-5 mb-4">Welcome To <span class="text-primary">CELOE CODE</span></h1>
-            <h4 class="text-primary mb-4">Bagian Pengembangan Konten CeLOE</h4>
-            <p class="mb-4">CeLOE digambarkan sebagai pemanfaatan e-learning secara luas dalam bingkai Telkom University sebagai kampus digital. Pemanfaatan dimaksud adalah: e-learning sebagai pendukung pembelajaran regular (e-Supported Learning) e-Learning sebagai bagian dari pembelajaran reguler (Blended Learning)</p>
-            <a href="<?php echo get_home_url() . '/form/'; ?>" class="btn btn-primary py-md-3 px-md-5 rounded-pill">Join Now</a>
+<div class="container-fluid py-6 px-5">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <h1 class="display-5 text-uppercase mb-4">We are <span class="text-primary">CELOE</span> in Content development section</h1>
+                <h4 class="text-uppercase mb-3 text-body">About Us</h4>
+                <p>CeLOE Content Development adalah unit di CeLOE (Center of e-Learning and Open Education) yang bertanggung jawab untuk mengembangkan konten-konten pembelajaran yang berkualitas tinggi dan inovatif dengan memanfaatkan teknologi digital. Unit ini fokus pada pengembangan konten-konten pembelajaran yang interaktif dan adaptif, sehingga dapat memfasilitasi pembelajaran yang lebih efektif dan efisien bagi pengguna. Selain itu, CeLOE Content Development juga menerapkan berbagai teknologi terkini seperti augmented reality, virtual reality, dan mixed reality dalam pengembangan konten pembelajaran.</p>
+                <div class="row gx-5 py-2">
+                    <div class="col-sm-6 mb-2">
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Course and Learning outcome Management</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Course Development System (CDS)</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Production House (Studio)</p>
+                    </div>
+                    <div class="col-sm-6 mb-2">
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Document Management System (DMS)</p>
+                    </div>
+                </div>
+                <p class="mb-4">Sejarah CeLOE dimulai pada tahun 2012, ketika Telkom University masih bernama Telkom Institute of Technology (IT Telkom). Pada saat itu, IT Telkom mulai mengembangkan LMS (Learning Management System) sebagai solusi teknologi pendidikan di kampus. Dalam pengembangan LMS, IT Telkom bekerjasama dengan beberapa perusahaan teknologi pendidikan, termasuk dengan Blackboard.</p>
+                <p class="mb-4">Pada tahun 2014, IT Telkom resmi menjadi Telkom University, dan CeLOE didirikan sebagai bagian dari Telkom University untuk mengelola pengembangan konten dan aplikasi e-learning. Dalam beberapa tahun terakhir, CeLOE semakin dikenal sebagai pusat inovasi teknologi pendidikan di Indonesia, dengan berbagai produk dan layanan yang telah dikembangkan untuk memenuhi kebutuhan teknologi pendidikan di Indonesia dan internasional.</p>
+            </div>
+            <div class="col-lg-5 pb-5" style="min-height: 400px;">
+                <div class="position-relative bg-dark-radial h-100 ms-5">
+                    <img class="position-absolute w-100 h-100 mt-10 ms-n10" src="<?php echo get_template_directory_uri() . '/assets/img/Back.png"style="object-fit: cover;' ?>"
+                </div>
+            </div>
         </div>
-        <div class="col-lg-6">
-            <div class="h-100 d-flex flex-column justify-content-center bg-primary p-5">
-                <div class="d-flex text-white mb-5">
-                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
-                        <i class="fa fa-users fs-4"></i> 
-                    </div>
-                    <div class="ps-4">
-                        <h3>Pengguna CeLOE</h3>
-                        <p class="mb-0">CeLOE tidak hanya bisa diakses oleh pihak Telkom University saja, melainkan juga disediakan untuk eksternal. Aplikasi ini bisa digunakan oleh masyarakat luas, tetapi harus melakukan registrasi melalui OCW.</p>
-                    </div>
-                </div>
-                <div class="d-flex text-white mb-5">
-                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
-                        <i class="fa fa-cogs fs-4"></i>
-                    </div>
-                    <div class="ps-4">
-                        <h3>Landing Page CeLOE</h3>
-                        <p class="mb-0">Aplikasi CeLOE merupakan landing page yang berkaitan dengan kegiatan digital learning di Telkom University. Ada banyak informasi yang didapatkan seperti berita terbaru, profile, dan kebijakan terkait digital learning. </p>
-                    </div>
-                </div>
-                <div class="d-flex text-white">
-                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
-                        <i class="fa fa-rocket fs-4"></i>
-                    </div>
-                    <div class="ps-4">
-                        <h3>Aktivitas di CeLOE</h3>
-                        <p class="mb-0">Ada banyak hal yang bisa dilakukan melai aplikasi ini, seperti membuat program pembelajaran berbasis virtual. Berikutnya, ada LMS yang berisi laporan untuk program pembelajaran berbasis blended learning.</p>
+    </div>
+    
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- About End -->
+    <!-- About End -->
 
 <?php get_footer(); ?>

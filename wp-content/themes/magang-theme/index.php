@@ -187,7 +187,7 @@ $tampil_data = recentNewsIndex('news');
 
     <!-- Services Start -->
     <div class="container-fluid pt-6 px-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px; margin-top: -100px;">
             <h1 class="display-5 mb-0">What Our Activity</h1>
             <hr class="w-25 mx-auto bg-primary">
         </div>
@@ -198,7 +198,7 @@ $tampil_data = recentNewsIndex('news');
                         <i class="fa fa-newspaper fa-2x"></i>
                     </div>
                     <h3 class="mb-3">Event</h3>
-                    <p class="mb-0">kegiatan yang diadakan oleh bang CeLoe yang berupa sebuah seminar, di waktu - waktu tertentu.</p>
+                    <p class="mb-0">Kegiatan yang diadakan oleh bang CeLoe yang berupa sebuah seminar, di waktu - waktu tertentu.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -206,8 +206,8 @@ $tampil_data = recentNewsIndex('news');
                     <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
                         <i class="fa fa-folder fa-2x"></i>
                     </div>
-                    <h3 class="mb-3">Administrative</h3>
-                    <p class="mb-0">ketatausahaan memerlukan sebuah perencanaan yang baik dan matang, dimana setiap melakukan kegiatan organisasi.</p>
+                    <h3 class="mb-3">Partnership</h3>
+                    <p class="mb-0">Kegiatan yang dilakukan oleh unit Bang CeLOE dalam menjalin kerjasama antar unit internal Telkom University dan pihak eksternal seperti dunia industri.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -215,8 +215,8 @@ $tampil_data = recentNewsIndex('news');
                     <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
                         <i class="fa fa-camera fa-2x"></i>
                     </div>
-                    <h3 class="mb-3">Videography</h3>
-                    <p class="mb-0"> Merekam kejadian bentuk video, mendalam mengenai teknik pengambilan gambar, hingga proses editing.</p>
+                    <h3 class="mb-3">Research</h3>
+                    <p class="mb-0">Program penelitian oleh tim dosen yang diarahkan oleh CeLOE dalam pengembangan pembelajaran.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -225,7 +225,7 @@ $tampil_data = recentNewsIndex('news');
                         <i class="fa fa-book fa-2x"></i>
                     </div>
                     <h3 class="mb-3">Documentation</h3>
-                    <p class="mb-0">Dokumentasi kegiatan event di telkom university.</p>
+                    <p class="mb-0">Dokumentasi kegiatan  yag diselenggarakan oleh Telkom University.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -233,8 +233,8 @@ $tampil_data = recentNewsIndex('news');
                     <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
                         <i class="fa fa-laptop fa-2x"></i>
                     </div>
-                    <h3 class="mb-3">Content Video</h3>
-                    <p class="mb-0">Konten - konten video yang berisi sebuah materi pelajaran.</p>
+                    <h3 class="mb-3">Content Video Production</h3>
+                    <p class="mb-0">Serangkaian proses dalam pembuatan video materi pelajaran untuk Telkom University maupun untuk Mitra.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -242,8 +242,8 @@ $tampil_data = recentNewsIndex('news');
                     <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
                         <i class="fa fa-map fa-2x"></i>
                     </div>
-                    <h3 class="mb-3">Renewal</h3>
-                    <p class="mb-0">Perbaikan pada sistem LMS agar siswa dapat mengaksesnya dengan mudah.</p>
+                    <h3 class="mb-3">Manajemen Data Video</h3>
+                    <p class="mb-0">Mengelola penggunaan video pembelajaran yang telah diproduksi untk kebutuhan pembelajaran di Telkom University maupun kerjasama dengan Mitra.</p>
                 </div>
             </div>
         </div>
@@ -253,7 +253,7 @@ $tampil_data = recentNewsIndex('news');
 
     <!-- Features Start -->
     <div class="container-fluid py-6 px-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;margin-top: 10px;">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 mb-0">Features</h1>
             <hr class="w-25 mx-auto bg-primary">
         </div>
@@ -265,24 +265,21 @@ $tampil_data = recentNewsIndex('news');
                             <i class="fa fa-bullhorn fs-4 text-white"></i>
                         </div>
                         <h3>Workshop</h3>
-                        <p class="mb-0">CeLoe seringkali mengadakan kegiatan penyampaian materi, dengan tujuan untuk
-                            membagikan pengalaman.</p>
+                        <p class="mb-0">Kegiatan interaktif dan praktek dalam berbagai pengalaman kepada peserta untuk mempelajari keterampilan atau topik tertentu dengan lebih mendalam.</p>
                     </div>
                     <div class="col-12">
                         <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                             <i class="fa fa-bullseye fs-4 text-white"></i>
                         </div>
                         <h3>Pelatihan</h3>
-                        <p class="mb-0">CeLoe juga mengadakan pelatihan secara berkala dengam tujuan untuk menambah
-                            skill peserta.</p>
+                        <p class="mb-0">CeLoe juga mengadakan pelatihan secara berkala dengam tujuan untuk menambah skill peserta.</p>
                     </div>
                     <div class="col-12">
                         <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                             <i class="fa fa-award fs-4 text-white"></i>
                         </div>
-                        <h3>Sertifikat</h3>
-                        <p class="mb-0">Sertifikat akan didapatkan jika peserta berhasil menyelesaikan kegiatan Celoe.
-                        </p>
+                        <h3>Sertifikasi</h3>
+                        <p class="mb-0">Kegiatan yang dilakukan untuk memastikan kompetensi seseorang yang telah didapatkan melalui pembelajaran, pelatihan, maupun pengalaman kerja dengan standar Telkom University.</p>
                     </div>
                 </div>
             </div>
@@ -305,24 +302,21 @@ $tampil_data = recentNewsIndex('news');
                             <i class="fa fa-id-badge fs-4 text-white"></i>
                         </div>
                         <h3>Internship</h3>
-                        <p class="mb-0">Kami membuka tempat magang untuk para mahasiswa telkom university, yang ingin
-                            mencoba pengalaman magang di CeLoe </p>
+                        <p class="mb-0">Merupakan kegiatan magang yang dibuka oleh bang CeLOE untuk mahasiswa Telkom University yang ingin mendapatkan pengalaman magang di Bang CeLOE</p>
                     </div>
                     <div class="col-12">
                         <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                             <i class="fa fa-headset fs-4 text-white"></i>
                         </div>
-                        <h3>Video Editor Management</h3>
-                        <p class="mb-0">Bagian pengelolaan video di lms, bagian pengembangan sebuah video materi
-                            pembelajaran</p>
+                        <h3>Merdeka Belajar Kampus Merdeka</h3>
+                        <p class="mb-0">Kegiatan yang dilakukan untuk mendukung program pemerintah yang bertujuan untuk mendorong mahasiswa dalam menguasai berbagai keilmuan untuk bekal memasuki dunia kerja</p>
                     </div>
                     <div class="col-12">
                         <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                             <i class="fa fa-history fs-4 text-white"></i>
                         </div>
-                        <h3>Dokumentasi</h3>
-                        <p class="mb-0">Mendokumentasi sebuah kegiatan yang terdapat di TelkomUniversity, sebagai
-                            pengumpulan data terhadap kegiatan tersebut</p>
+                        <h3>Support Event</h3>
+                        <p class="mb-0">Kegiatan yang mendukung acara di telkom University maupun Mitra dalam suatu kegiatan untuk Dokumentasi dan Streaming</p>
                     </div>
                 </div>
             </div>
@@ -330,7 +324,7 @@ $tampil_data = recentNewsIndex('news');
     </div>
     <!-- Features Start -->
 
-
+    
     <!-- Internship Start -->
     <div class="container-fluid bg-secondary px-0">
         <div class="row g-0">
@@ -363,6 +357,7 @@ $tampil_data = recentNewsIndex('news');
                         </div>
                         <div class="col-6">
                             <button class="btn btn-primary w-100 h-100" type="submit">Sign in now</button>
+                            
                         </div>
                     </div>
                 </form>
@@ -385,45 +380,45 @@ $tampil_data = recentNewsIndex('news');
                 </div>
             </div>
             <div class="col-lg-6 py-6 px-5">
-                <h1 class="display-5 mb-4">What Our Staff say!!!</h1>
+                <h1 class="display-5 mb-4">What Our Partner Say!!!</h1>
                 <div class="owl-carousel testimonial-carousel">
                     <div class="testimonial-item">
-                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat dolor rebum sit ipsum.</p>
+                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Kebijakan Merdeka Belajar Kemendikbud yang mendekatkan perguruan tinggi dengan dunia usaha dan industri.</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid rounded-circle" src="<?= get_template_directory_uri() . '/assets/img/testimonial-1.jpg'; ?>" alt="">
+                            <img class="img-fluid rounded-circle" src="<?= get_template_directory_uri() . '/assets/img/2.png'; ?>" alt="">
                             <div class="ps-4">
-                                <h3>Fegi Syawaldi</h3>
-                                <span class="text-uppercase">Staff</span>
+                                <h3>Kampus Merdeka</h3>
+                                <span class="text-uppercase">Partner</span>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item">
-                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat dolor rebum sit ipsum.</p>
+                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Saat ini terdapat 47 mata kuliah Telkom University yang publish di LMS Spada Indonesia.</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid rounded-circle" src="<?= get_template_directory_uri() . '/assets/img/testimonial-2.jpg'; ?>" alt="">
+                            <img class="img-fluid rounded-circle" src="<?= get_template_directory_uri() . '/assets/img/4.jpeg'; ?>" alt="">
                             <div class="ps-4">
-                                <h3>Annisa Gustien</h3>
-                                <span class="text-uppercase">Head</span>
+                                <h3>Spada</h3>
+                                <span class="text-uppercase">Partner</span>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item">
-                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat dolor rebum sit ipsum.</p>
+                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Saat ini terdapat 16 mata kuliah Telkom University yang publish di platform ICEI.</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid rounded-circle" src="<?= get_template_directory_uri() . '/assets/img/testimonial-3.jpg'; ?>" alt="">
+                            <img class="img-fluid rounded-circle" src="<?= get_template_directory_uri() . '/assets/img/6.png'; ?>" alt="">
                             <div class="ps-4">
-                                <h3>Arini Rohmawati</h3>
-                                <span class="text-uppercase">Staff</span>
+                                <h3>ICEI Institute</h3>
+                                <span class="text-uppercase">Partner</span>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item">
-                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat dolor rebum sit ipsum.</p>
+                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Saat ini terdapat 13 mata kuliah Telkom University yang publish di platform UDEMY.</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid rounded-circle" src="img/testimonial-4.jpg" alt="">
+                            <img class="img-fluid rounded-circle" src="<?= get_template_directory_uri() . '/assets/img/5.png'; ?>" alt="">
                             <div class="ps-4">
-                                <h3>Mhd Yudha Pratama</h3>
-                                <span class="text-uppercase">Staff</span>
+                                <h3>Udemy</h3>
+                                <span class="text-uppercase">Partner</span>
                             </div>
                         </div>
                     </div>

@@ -153,30 +153,6 @@
                 <form>
                     <div class="row gx-3">
                         <div class="col-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="form-floating-1" placeholder="John Doe">
-                                <label for="form-floating-1">Full Name</label>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="form-floating-2" placeholder="name@example.com">
-                                <label for="form-floating-2">Email address</label>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-floating mb-3">
-                                <input type="Event" class="form-control" id="form-floating-2" placeholder="name@example.com">
-                                <label for="form-floating-2">Event</label>
-                            </div>
-                        </div>
-                    <div class="col-6">
-                        <div class="form-floating mb-3">
-                            <input type="partnership" class="form-control" id="form-floating-2" placeholder="name@example.com">
-                            <label for="form-floating-2">Partnership</label>
-                        </div>
-                    </div>
-                        <div class="col-6">
                             <button class="btn btn-primary w-100 h-100" type="submit">Request Now</button>
                         </div>
                     </div>

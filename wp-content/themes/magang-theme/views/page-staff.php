@@ -18,19 +18,6 @@
                 <div class="row gx-3">
                     <div class="col-6">
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="form-floating-1" placeholder="John Doe">
-                            <label for="form-floating-1">Full Name</label>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="form-floating-2"
-                                placeholder="name@example.com">
-                            <label for="form-floating-2">Email address</label>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="form-floating">
                             <select class="form-select" id="floatingSelect" aria-label="Financial Consultancy">
                                 <option selected>Design Graphic</option>
                                 <option value="1">Video Editor</option>
