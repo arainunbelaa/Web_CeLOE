@@ -8,6 +8,51 @@
 
 <!-- Services Start -->
 <div class="container-fluid py-6 px-5">
+    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 mb-0">Our Services</h1>
+            <hr class="w-25 mx-auto bg-primary">
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-secondary text-center px-5">
+                    <img class="img-responsive2" src="PartnerIMG/education.png" alt="Icon" style="width:100px;height:100px;">
+                    <h3>Pelatihan</h3>
+                    <p class="mb-0">Kami menyediakan pelatihan mengenai keterampilan menggunakan platform Learning Management System.</p>
+                    <a href="https://telkomuniversityofficial-my.sharepoint.com/:b:/g/personal/celoecode_365_telkomuniversity_ac_id/EU3WqE8DprNAoa6zrL8-F7QBMU5a5_AlAq-iSEy4Wbl9Sw?e=Fck5GE" target="_blank"><p>Selengkapnya...</p></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-secondary text-center px-5">
+                    <img class="img-responsive2" src="PartnerIMG/winner.png" alt="Icon" style="width:100px;height:100px;">
+                    <h3>Sertifikasi</h3>
+                    <p class="mb-0">Kami menyediakan Sertifikasi untuk penggunaan platform Learning Management System, kru studio dan editor.</p>
+                    <a href="https://telkomuniversityofficial-my.sharepoint.com/:b:/g/personal/celoecode_365_telkomuniversity_ac_id/ETcf6nBPqf9GlodaLZJY2QQBhVADi-PE4XkvmkwX-MpQSA?e=MxdLbf" target="_blank"><p>Selengkapnya...</p></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-secondary text-center px-5">
+                    <img class="img-responsive2" src="PartnerIMG/movie.png" alt="Icon" style="width:100px;height:100px;">
+                    <h3>Shooting Studio Broadcasting CeLOE & Crew</h3>
+                    <p class="mb-0">Kami menyediakan Studio dengan standar pembuatan konten digital dan juga broadcasting.</p>
+                    <a href="https://telkomuniversityofficial-my.sharepoint.com/:b:/g/personal/celoecode_365_telkomuniversity_ac_id/ERx4avPf-71IhSXTiv4yT4MBtXfdF837dApvA5PumFP-wg?e=HbBxTg" target="_blank"><p>Selengkapnya...</p></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-secondary text-center px-5">
+                    <img class="img-responsive2" src="PartnerIMG/camera.png" alt="Icon" style="width:100px;height:100px;">
+                    <h3>Shooting Studio Mobile & Crew</h3>
+                    <p class="mb-0">Kami menyediakan studio mobile yang bisa digunakan untuk pengambilan gambar baik indoor maupun outdoor.</p>
+                    <a href="https://telkomuniversityofficial-my.sharepoint.com/:b:/g/personal/celoecode_365_telkomuniversity_ac_id/Ef1NvsHwM61HjUfVvJc4RfMBaAZz9mWdODJVu3TazqZrkQ?e=mro33i" target="_blank"><p>Selengkapnya...</p></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-secondary text-center px-5">
+                    <img class="img-responsive2" src="PartnerIMG/live-streaming.png" alt="Icon" style="width:100px;height:100px;">
+                    <a href="https://www.udemy.com/id/" target="_blank"><h3>Live Streaming Onsite, Online & Hybrid</h3></a>
+                    <p class="mb-0">Kami juga memiliki perangkat mobile studio broadcasting yang bisa digunakan untuk event Onsite, Online, maupun Hybrid.</p>
+                    <a href="https://telkomuniversityofficial-my.sharepoint.com/:b:/g/personal/celoecode_365_telkomuniversity_ac_id/EX2o6MULcvpKqP6Jbs3JzUgBI567fBK9ZXoq0wVuk93LNg?e=eIcLk0" target="_blank"><p>Selengkapnya...</p></a>
+                </div>
+            </div>
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 mb-0">Partnership</h1>
             <hr class="w-25 mx-auto bg-primary">
